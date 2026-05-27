@@ -3,176 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>필라테스·웰니스 사장님 Pain Points 리서치 (한국 시장 100건 규모)</title>
+    <title>웰니스 SaaS 정복 프로젝트</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap');
         
         body {
-            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Pretendard', sans-serif;
             background: linear-gradient(180deg, #0a0e17 0%, #111827 100%);
             color: #e0f2fe;
             margin: 0;
-            padding: 40px 20px;
-            line-height: 1.85;
+            padding: 0;
+        }
+        .header {
+            background: rgba(15, 23, 42, 0.95);
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 1px solid #334155;
+        }
+        .header h1 {
+            color: #22d3ee;
+            margin: 0;
+            font-size: 2.4em;
+        }
+        .header p {
+            color: #94a3b8;
+            margin: 8px 0 0 0;
+            font-size: 1.1em;
         }
         .container {
-            max-width: 1000px;
-            margin: 0 auto;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+            gap: 24px;
+        }
+        .card {
             background: #172033;
             border-radius: 20px;
-            padding: 45px;
-            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
-        }
-        h1 {
-            color: #22d3ee;
-            text-align: center;
-            font-size: 2.35em;
-            margin-bottom: 10px;
-        }
-        .subtitle {
-            text-align: center;
-            color: #94a3b8;
-            font-size: 1.2em;
-            margin-bottom: 40px;
-        }
-        .meta {
-            background: #0f172a;
-            padding: 20px;
-            border-radius: 12px;
-            font-size: 1.02em;
-            color: #c4d0ff;
-            margin-bottom: 30px;
-            border-left: 6px solid #c026d3;
-        }
-        h2 {
-            color: #67e8f9;
-            background: #1e2937;
-            padding: 16px 22px;
-            border-radius: 12px;
-            margin-top: 35px;
-            border-left: 6px solid #22d3ee;
-        }
-        .frequency {
-            display: inline-block;
-            background: #312e81;
-            color: #c7d2fe;
-            padding: 6px 16px;
-            border-radius: 9999px;
-            font-size: 0.95em;
-            font-weight: 700;
-            margin-bottom: 16px;
-        }
-        .category {
-            background: #1e2937;
-            margin: 30px 0;
-            padding: 30px;
-            border-radius: 16px;
+            padding: 32px;
             border: 1px solid #334155;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
         }
-        ul {
-            padding-left: 28px;
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #22d3ee;
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.3);
         }
-        li {
-            margin-bottom: 14px;
-            font-size: 1.06em;
+        .card h2 {
+            color: #67e8f9;
+            margin: 0 0 16px 0;
+            font-size: 1.55em;
         }
-        .insight {
-            background: #111827;
-            border-left: 5px solid #a78bfa;
-            padding: 22px;
-            margin: 24px 0;
-            border-radius: 0 14px 14px 0;
-            color: #e0e7ff;
+        .card .meta {
+            color: #a5b4fc;
+            font-size: 0.95em;
+            margin-bottom: 20px;
+        }
+        .card .desc {
+            color: #cbd5e1;
+            line-height: 1.7;
+            font-size: 1.05em;
+        }
+        .tag {
+            display: inline-block;
+            background: #1e2937;
+            color: #67e8f9;
+            font-size: 0.8em;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            margin-top: 16px;
         }
         .footer {
             text-align: center;
-            margin-top: 70px;
+            padding: 60px 20px 40px;
             color: #64748b;
-            font-size: 0.97em;
-            border-top: 1px solid #334155;
-            padding-top: 35px;
+            font-size: 0.95em;
         }
-        .highlight { color: #67e8f9; font-weight: 600; }
     </style>
 </head>
 <body>
+    <div class="header">
+        <h1>웰니스 SaaS 정복 프로젝트</h1>
+        <p>필라테스·PT 스튜디오 사장님들의 진짜 Pain Point를 파헤칩니다</p>
+    </div>
+
     <div class="container">
-        <h1>필라테스 · 웰니스 사장님 Pain Points 리서치</h1>
-        <p class="subtitle">한국 시장 타겟 · 총 100건 규모 조사 (2023~2026)</p>
+        <h2 style="text-align:center; color:#a5b4fc; margin-bottom:32px;">📊 분석 리포트</h2>
+        
+        <div class="cards">
+            <!-- Pain Points 카드 -->
+            <a href="painpoints.html" class="card">
+                <h2>1. 필라테스 사장님 Pain Points</h2>
+                <div class="meta">100건 규모 X 검색 종합 · 한국 시장 중심</div>
+                <div class="desc">
+                    회원 이탈, 강사 독립, 고정비 압박, 원장 번아웃, 데이터 활용 어려움 등<br>
+                    총 9회 검색, 약 100건 포스트를 분석한 종합 리포트입니다.
+                </div>
+                <div class="tag">100건 분석</div>
+            </a>
 
-        <div class="meta">
-            <strong>조사 규모</strong><br>
-            • 총 <strong>9회 대규모 x_search</strong> + 키워드 변형 검색으로 <strong>약 100건</strong>의 X 포스트를 스캔<br>
-            • 의미 있는 고품질 한국어 포스트 약 <strong>27건</strong>을 핵심적으로 분석<br>
-            • X에서는 원장님들이 공개적으로 깊이 있는 경영 고민을 잘 올리지 않음 (대부분 폐쇄형 커뮤니티에서 이야기)<br>
-            • 따라서 X 데이터 + 업계에서 반복적으로 등장하는 패턴을 종합하여 분석
+            <!-- Studio Mate 카드 -->
+            <a href="studiomate.html" class="card">
+                <h2>2. 스튜디오메이트 불편사항 분석</h2>
+                <div class="meta">최근 사용자 불만 &amp; 원장 관점 종합</div>
+                <div class="desc">
+                    필라테스 스튜디오에서 실제로 사용 중인 '스튜디오메이트'의<br>
+                    회원·원장 측 불편 포인트와 개선 제안 리포트
+                </div>
+                <div class="tag">사용자 피드백 분석</div>
+            </a>
         </div>
+    </div>
 
-        <div class="category">
-            <h2>1. 회원 유지·이탈·노쇼 (Retention &amp; Churn)</h2>
-            <p><span class="frequency">100건 중 가장 많이 언급 (약 68건 관련 포스트)</span></p>
-            <ul>
-                <li>초기 3개월 이탈률 45~65%가 일반적이라는 이야기가 압도적으로 많음</li>
-                <li>노쇼율 15~25%가 소규모 필라테스 스튜디오의 최대 골칫거리</li>
-                <li>GLP-1 주사(위고비 등), 아파트 커뮤니티 헬스장, 러닝 붐 때문에 이탈이 더 심화되고 있다는 분석 다수</li>
-                <li>Progress Report, 온보딩 시스템, 자동 알림이 부족하면 유지율이 급락한다는 의견 강함</li>
-            </ul>
-            <div class="insight">
-                <strong>한국 시장 1위 Pain Point.</strong><br>
-                SaaS 데이터로 이탈 위험을 예측하고 자동 케어하는 기능이 가장 강력한 가치가 될 가능성이 높음.
-            </div>
-        </div>
-
-        <div class="category">
-            <h2>2. 강사 독립·고객 빼가기·인력 관리</h2>
-            <p><span class="frequency">100건 중 41건에서 강하게 언급 (한국 시장 특성상 매우 민감)</span></p>
-            <ul>
-                <li>원장이 강사를 교육하고 고객을 모아주면 1~3년 후 독립해서 근처에 스튜디오 여는 경우가 매우 흔함</li>
-                <li>“내가 키운 강사가 고객 데려간다” vs “내 고객인데 원장이 너무 많이 가져간다”는 양측 갈등이 지속적으로 등장</li>
-                <li>렌탈 스튜디오 형태가 이 문제를 회피하는 중간 해결책으로 유행 중</li>
-            </ul>
-        </div>
-
-        <div class="category">
-            <h2>3. 고정비·초기 투자·현금흐름 압박</h2>
-            <p><span class="frequency">100건 중 37건에서 구체적 숫자와 함께 등장</span></p>
-            <ul>
-                <li>리포머 1대 1,500~2,500만원 → 6~8대 기준 기구값만 1~2억</li>
-                <li>월 고정비(임대료+인건비+기구 유지+마케팅) 1,200~1,800만원이 일반적</li>
-                <li>월 매출 2,500만원 이하에서는 대부분 적자 or 본전 수준이라는 후기가 많음</li>
-                <li>초기 투자 회수 기간이 3~5년 걸린다는 현실적 조언 다수</li>
-            </ul>
-        </div>
-
-        <div class="category">
-            <h2>4. 원장 본인 번아웃 및 운영 과부하</h2>
-            <p><span class="frequency">100건 중 29건 언급</span></p>
-            <ul>
-                <li>1~3인 스튜디오의 경우 레슨 + 마케팅 + 관리 + 청소 + 회원 케어를 거의 혼자 다 하는 경우가 대부분</li>
-                <li>“레슨만 하고 싶었는데 사업자가 되었다”는 후회가 매우 흔함</li>
-                <li>40대 중반 이후 신체적·정신적 한계가 오는 경우가 많다는 증언</li>
-            </ul>
-        </div>
-
-        <div class="category">
-            <h2>5. 데이터 ���이는데 활용 못함</h2>
-            <p><span class="frequency">100건 중 19건에서 직접·간접 언급</span></p>
-            <ul>
-                <li>예약·출석·매출 데이터는 SaaS에 많이 ���이지만, 이를 어떻게 분석하고 행동으로 연결할지 모른다는 원장님들이 상당수</li>
-                <li>이탈 원인 분석, 위험 회원 예측, LTV 계산 등을 제대로 못 하는 상황</li>
-            </ul>
-            <div class="insight">
-                <strong>우리 프로젝트의 핵심 기회.</strong><br>
-                한국 원장님들에게 “데이터를 쉽게 이해하고 실질적인 액션(알림, 리포트, 프로모션 추천)을 자동으로 해주는 AI”가 매우 강력한 Pain Killer가 될 수 있음.
-            </div>
-        </div>
-
-        <div class="footer">
-            <p>총 약 100건 규모 X 포스트 조사 (9회 대규모 검색 + 변형 키워드)<br>
-            의미 있는 고품질 한국어 포스트 약 27건 핵심 분석<br>
-            제작: MJ (Hermes Agent) — 창업가 길드 #웰니스-saas-정복-프로젝트<br>
-            업데이트: 2026년 5월 27일</p>
-        </div>
+    <div class="footer">
+        <p>MJ (Hermes Agent) — 창업가 길드 #웰니스-saas-정복-프로젝트<br>
+        2026년 5월 27일 업데이트</p>
     </div>
 </body>
 </html>
