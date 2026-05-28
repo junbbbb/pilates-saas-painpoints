@@ -188,6 +188,47 @@
             color: #64748b;
             margin-bottom: 16px;
         }
+
+        /* Archive Section */
+        .archive-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+        
+        .archive-card {
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            background: white;
+            transition: all 0.2s;
+        }
+        
+        .archive-card:hover {
+            border-color: #0ea5e9;
+            box-shadow: 0 4px 12px rgba(14, 165, 233, 0.1);
+        }
+        
+        .archive-card h4 {
+            margin: 0 0 8px 0;
+            font-size: 15px;
+            color: #0c4a6e;
+        }
+        
+        .archive-card p {
+            margin: 0 0 12px 0;
+            font-size: 13.5px;
+            color: #64748b;
+            line-height: 1.5;
+        }
+        
+        .archive-card a {
+            font-size: 13px;
+            color: #0ea5e9;
+            text-decoration: none;
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
@@ -220,7 +261,6 @@
             <div class="meta">X 포스트 약 100건 + 해외 SaaS 분석 + 클래스 경제성 분석 기반</div>
 
             <div class="pain-grid">
-                <!-- Pain 1 -->
                 <div class="pain-card">
                     <h4>1. 회원 이탈 &amp; 리텐션</h4>
                     <p>초기 3개월 이탈률 45~65%. 노쇼율 15~25%가 일상. GLP-1, 아파트 시설, 러닝 열풍 등 외부 요인으로 이탈이 가속화되고 있음.</p>
@@ -230,7 +270,6 @@
                     </div>
                 </div>
 
-                <!-- Pain 2 -->
                 <div class="pain-card">
                     <h4>2. 강사 독립 리스크</h4>
                     <p>강사 교육 후 고객을 데리고 나가 근처에 스튜디오 차리는 사례가 매우 흔함. 원장과 강사 간 고객 소유권 갈등이 지속.</p>
@@ -240,7 +279,6 @@
                     </div>
                 </div>
 
-                <!-- Pain 3 -->
                 <div class="pain-card">
                     <h4>3. 고정비 + 현금흐름 압박</h4>
                     <p>임대료·인건비·마케팅 비용이 고정적으로 발생하는데 회원 수가 불안정하면 현금흐름이 크게 흔들림.</p>
@@ -294,9 +332,47 @@
             </div>
         </div>
 
+        <!-- 5. 상세 리서치 아카이브 -->
+        <div class="section">
+            <div class="section-title">📚 상세 리서치 아카이브</div>
+            <p style="color:#475569; margin-bottom:16px;">더 깊게 보고 싶을 때 참고할 수 있는 기존 조사 자료들입니다.</p>
+
+            <div class="archive-grid">
+                <div class="archive-card">
+                    <h4>필라테스 사장님 Pain Points</h4>
+                    <p>약 100건 X 포스트 분석으로 도출한 원장들의 주요 고통점 (회원 이탈, 강사 독립, 현금흐름 등)</p>
+                    <a href="painpoints.html" target="_blank">상세 보기 →</a>
+                </div>
+
+                <div class="archive-card">
+                    <h4>스튜디오메이트 불편사항 분석</h4>
+                    <p>국내에서 실제로 많이 쓰이는 툴의 회원·원장 측 불편 포인트 정리</p>
+                    <a href="studiomate.html" target="_blank">상세 보기 →</a>
+                </div>
+
+                <div class="archive-card">
+                    <h4>수업 구성 전략 &amp; 수익성</h4>
+                    <p>적정 클래스 인원, Utilization Rate, Revenue per Class, Break-even 계산법 등</p>
+                    <a href="class-profitability.html" target="_blank">상세 보기 →</a>
+                </div>
+
+                <div class="archive-card">
+                    <h4>해외 SaaS 벤치마크</h4>
+                    <p>Mindbody, My Best Studio, WellnessLiving 등 주요 제품 비교 및 시장 상황</p>
+                    <a href="saas-benchmark.html" target="_blank">상세 보기 →</a>
+                </div>
+
+                <div class="archive-card">
+                    <h4>SaaS Marketing Playbooks</h4>
+                    <p>최근 6개월 고인기 X 포스트에서 추출한 SaaS 성장 전략 (Free Tools, Reddit 등)</p>
+                    <a href="saas-marketing-playbooks.html" target="_blank">상세 보기 →</a>
+                </div>
+            </div>
+        </div>
+
         <div style="text-align:center; color:#64748b; font-size:13px; margin-top:40px;">
-            이 대시보드는 아이디어 발굴 + 초기 리서치 단계를 위한 합성 문서입니다.<br>
-            솔루션은 아직 구체화하지 않았으며, 기회 영역만 정리했습니다.
+            Synthesis 부분은 결정과 논의를 위한 요약이며,<br>
+            아래 아카이브는 필요할 때 깊이 있게 참고할 수 있도록 정리했습니다.
         </div>
 
     </div>
